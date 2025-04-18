@@ -1,2 +1,0 @@
-window.scenes = window.scenes || []
-scenes.push(...[{'id': 32, 'image': 'images/fallback.png', 'text': 'Ты оглядываешься. Вокруг снова Пустошь. Путь продолжается, но ты уже знаешь: плов — это не просто блюдо, это путь.', 'choices': [{'text': 'Начать сначала', 'next': 0}]}]);
