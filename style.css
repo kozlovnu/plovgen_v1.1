@@ -1,0 +1,91 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", monospace;
+  background-color: #1e1a16;
+  color: #f5deb3;
+  background-image: url('images/interface/bg_pattern.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.scene {
+  display: none;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+  background: rgba(20, 15, 10, 0.85);
+  border: 4px double #c69c6d;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #000;
+}
+
+.scene.active {
+  display: block;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 2px solid #e5c185;
+}
+
+.choices button {
+  display: block;
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  background: #4a3822;
+  border: 2px solid #a67845;
+  color: #f3e2c7;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  word-break: break-word;
+}
+
+.choices button:hover {
+  background: #61452c;
+}
+
+@media (max-width: 768px) {
+  .scene {
+    padding: 1rem;
+    border-width: 2px;
+    border-radius: 15px;
+  }
+
+  .choices button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .illustration {
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .scene {
+    padding: 0.75rem;
+  }
+
+  .choices button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
